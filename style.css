@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+body>p{
+	text-align: center;
+	padding: 10px;
+	font-size: 17px;
+}
+body>p>a{
+	color: #000;
+	text-decoration: none;
+	transition:0.3s color ease;
+}
+body>p>a:hover{
+	color: #ea2c62;
+}
+.full-width {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  font-size: 20px !important;
+  padding: 7px 15px !important;
+  border: 3px solid #ea2c62 !important;
+  background: transparent;
+  border-radius: 25px !important;
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out background;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ea2c62;
+}
+
+.full-width.header {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("https://www.teahub.io/photos/full/232-2327450_hd-business-wallpaper-professional-background-hd-design.jpg") no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  min-height: 90vh;
+  position: relative;
+}
+
+#wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+section h2 {
+  font-size: 45px;
+  text-align: center;
+}
+section h4 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 300;
+}
+
+#header {
+  width: 100%;
+}
+#header navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header navbar .logo {
+  width: 120px;
+  padding-left: 10px;
+}
+#header navbar nav ul {
+  list-style: none;
+}
+#header navbar nav ul li {
+  float: left;
+}
+#header navbar nav ul li a {
+  color: #5d5959;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 15px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.3s ease color;
+  font-weight: 500;
+}
+#header navbar nav ul li a:hover {
+  color: #ea2c62;
+}
+#header h1, #header span, #header .btn-home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+#header h1 {
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#header span {
+  top: 60%;
+  font-size: 30px;
+  width: 80%;
+  text-align: center;
+}
+#header .btn-home {
+  text-decoration: none;
+  top: 70%;
+}
+
+.services {
+  background: #39479f;
+}
+.services #services {
+  color: #fff;
+}
+.services #services .services-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 60px;
+}
+.services #services .services-main .service-1, .services #services .services-main .service-2, .services #services .services-main .service-3, .services #services .services-main .service-4 {
+  width: 50%;
+  padding-right: 50px;
+}
+.services #services .services-main .service-1 .service-icon, .services #services .services-main .service-2 .service-icon, .services #services .services-main .service-3 .service-icon, .services #services .services-main .service-4 .service-icon {
+  width: 60px;
+  height: 60px;
+}
+.services #services .services-main .service-1 .service-content, .services #services .services-main .service-2 .service-content, .services #services .services-main .service-3 .service-content, .services #services .services-main .service-4 .service-content {
+  margin: 20px 0;
+}
+.services #services .services-main .service-1 .service-content h3, .services #services .services-main .service-2 .service-content h3, .services #services .services-main .service-3 .service-content h3, .services #services .services-main .service-4 .service-content h3 {
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+.services #services .services-main .service-1 .service-content h3::after, .services #services .services-main .service-2 .service-content h3::after, .services #services .services-main .service-3 .service-content h3::after, .services #services .services-main .service-4 .service-content h3::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #ea2c62;
+  transition: 0.3s ease width;
+}
+.services #services .services-main .service-1 .service-content p, .services #services .services-main .service-2 .service-content p, .services #services .services-main .service-3 .service-content p, .services #services .services-main .service-4 .service-content p {
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.5;
+}
+.services #services .services-main .service-1:hover h3::after, .services #services .services-main .service-2:hover h3::after, .services #services .services-main .service-3:hover h3::after, .services #services .services-main .service-4:hover h3::after {
+  width: 100%;
+}
+.services #services .services-main .service-3, .services #services .services-main .service-4 {
+  margin-top: 40px;
+}
+.services #services .services-main .service-1, .services #services .services-main .service-3 {
+  text-align: right;
+}
+.services #services .services-main .service-1 .service-icon, .services #services .services-main .service-3 .service-icon {
+  margin-left: auto;
+}
+
+.about-us {
+  background: #f4f4f2;
+}
+.about-us h2 {
+  margin-bottom: 15px;
+}
+.about-us .about-main {
+  margin-top: 60px;
+  display: flex;
+}
+.about-us .about-main .about-left {
+  width: 50%;
+  margin-right: 3%;
+}
+.about-us .about-main .about-right {
+  width: 47%;
+}
+.about-us .about-main .about-right h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-us .about-main .about-right p {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.about-us .about-main .about-right p span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact-us {
+  background: #dbf6e9;
+}
+.contact-us .contact-main {
+  display: flex;
+  margin-top: 60px;
+}
+.contact-us .contact-main .contact-left {
+  width: 50%;
+  padding-right: 15px;
+}
+.contact-us .contact-main .contact-left form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-us .contact-main .contact-left form .form-control {
+  width: 48%;
+  padding-bottom: 20px;
+  margin-right: 2%;
+}
+.contact-us .contact-main .contact-left form .form-control input, .contact-us .contact-main .contact-left form .form-control textarea {
+  width: 100%;
+  border: 1px solid #ececec;
+  padding: 7px 10px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  color: #000;
+}
+.contact-us .contact-main .contact-left form .form-control input:focus, .contact-us .contact-main .contact-left form .form-control textarea:focus {
+  border: 1px solid #ea2c62;
+}
+.contact-us .contact-main .contact-left form .form-control label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: 2px;
+  color: #484343;
+}
+.contact-us .contact-main .contact-left form .form-control.btn-submit {
+  margin-left: auto;
+  margin-top: 20px;
+  padding-bottom: 0;
+}
+.contact-us .contact-main .contact-left form .form-control.btn-submit .submit {
+  color: #000 !important;
+  transition: 0.3s all ease-in-out;
+}
+.contact-us .contact-main .contact-left form .form-control.btn-submit .submit:hover {
+  color: #fff !important;
+}
+.contact-us .contact-main .contact-left form .form-control.message {
+  padding-right: 0;
+  width: 100%;
+  padding-bottom: 0;
+}
+.contact-us .contact-main .contact-left form .form-control.message textarea {
+  width: 100%;
+  height: 115px;
+  resize: none;
+}
+.contact-us .contact-main .contact-right {
+  width: 50%;
+}
